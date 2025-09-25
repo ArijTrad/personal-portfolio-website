@@ -1,8 +1,35 @@
+// postcss.config.mjs
 export default {
   plugins: {
-    '@tailwindcss/postcss': {  // ❌ Wrong plugin name
-      tailwindcss: {},         // ❌ Nested incorrectly
-      autoprefixer: {},        // ❌ Nested incorrectly
+    '@tailwindcss/postcss': {
+      tailwindcss: {},
+      autoprefixer: {},
     },
   },
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+Option 2: Switch to proper Tailwind v4 config (After reinstalling)
+
+// postcss.config.mjs
+export default {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+};
+
+*/
